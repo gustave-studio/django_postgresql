@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="bg-light">
+<main role="main" class="container">
+    <div class="jumbotron bg-white">
+        <div class="text-center">
+            <h1>{{ title }}</h1>
+        </div>
+
+        <div class="text-left" style="width: 800px; margin: auto;">
+            SEGAの名作「ジェット セット ラジオ」に影響を受けたインディーゲーム、「Bomb Rush Cyberfunk」が8/18(金)に発売だ！
+            本作は、Nintendo Switch、Steamの両方で発売される。クールなグラフィック、サウンドと共に街を駆け抜けろ！
+        </div>
+
+        <br>
+
+        <div class="text-center">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+            data-text="{{ title }}"
+            data-url="https://gustavestudio.pythonanywhere.com/top/"
+            class="twitter-share-button" data-show-count="false">
+            Tweet
+            </a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <br>
+            <iframe width="600" height="315" src="{{ url }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+            <br>
+         </div>
+
+
+        <br>
+        <div class="text-center">
+            <button type="button" class="btn btn-primary">
+                <a class="text-light" href="/top">トップに戻る</a>
+            </button>
+        </div>
+    </div>
+</main>
+</div>
+{% endblock content %}
